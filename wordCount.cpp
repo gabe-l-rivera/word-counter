@@ -57,7 +57,7 @@ int hasher::Hash(string key){
         int hasher = 0;
         int index;
         for(int i = 0; i < key.length(); i++){
-                hasher+=(int)key[i] * 10;
+                hasher+=(int)key[i];
         }
         index = hasher % t_s;
         return index;
